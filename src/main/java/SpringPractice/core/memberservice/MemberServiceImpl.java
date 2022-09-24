@@ -3,9 +3,11 @@ package SpringPractice.core.memberservice;
 import SpringPractice.core.member.Member;
 import SpringPractice.core.repository.MemberRepository;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+@Component
 public class MemberServiceImpl implements MemberService{
     private final MemberRepository memberRepository;
 

@@ -2,7 +2,9 @@ package SpringPractice.core.discount;
 
 import SpringPractice.core.member.Grade;
 import SpringPractice.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy{
     @Override
     public int discount(Member member, int price) {

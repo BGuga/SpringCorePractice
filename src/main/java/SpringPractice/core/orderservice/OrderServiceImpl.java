@@ -4,9 +4,11 @@ import SpringPractice.core.discount.DiscountPolicy;
 import SpringPractice.core.member.Member;
 import SpringPractice.core.order.Order;
 import SpringPractice.core.repository.MemberRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+@Component
 public class OrderServiceImpl implements OrderService{
     private final DiscountPolicy discountPolicy;
     private final MemberRepository memberRepository;
